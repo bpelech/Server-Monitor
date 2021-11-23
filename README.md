@@ -25,7 +25,7 @@ In the servers-list.txt you can keep the list of your servers with name and IP a
 * Test & troubleshoot (test with your server) -> ./servermonitor.sh servername 10.10.10.10
 * Once everything is going well (you recieved email notifications) move to test the run.sh script and set it up in the crontab
 
-Tested under Ubuntu 20.04.3 LTS 
+Tested under Ubuntu 20.04.3 LTS and Raspbian 11 (bullseye)
 
 ## Create crontab job
 * crontab -e
