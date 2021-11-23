@@ -20,7 +20,9 @@ In the servers-list.txt you can keep the list of your servers with name and IP a
 * git clone https://github.com/bpelech/Server-Monitor.git
 * Edit servermonitor.sh -> change "mittente", "dest", "username" and "pass"
 * Edit servers-list.txt -> add your servers. One server per line. Server name is just for you - fping will call IP addresses. Syntax is "servername without space nor special charracters" space "IP address"
-* Test & troubleshoot -> ./servermonitor.sh servername 10.10.10.10
+* chmod 755 run.sh
+* chmod 755 servermonitor.sh
+* Test & troubleshoot (test with your server) -> ./servermonitor.sh servername 10.10.10.10
 * Once everything is going well (you recieved email notifications) move to test the run.sh script and set it up in the crontab
 
 Tested under Ubuntu 20.04.3 LTS 
