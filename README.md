@@ -31,12 +31,12 @@ Tested under Ubuntu 20.04.3 LTS and Raspbian 11 (bullseye)
 * crontab -e
 * Paste at the end the following line if you want to execute it every 5 minutes
 
-*/5 * * * * /path/to/the/script/run.sh
+*/5 * * * * cd /path/to/the/script && ./run.sh
 
 * Paste at the end the following line if you want to execute it every 30 minutes
 
-*/30 * * * * /path/to/the/script/run.sh
+*/30 * * * * cd /path/to/the/script && ./run.sh
 
 * Paste at the end the following line if you want to execute it every hour
 
-@hourly /path/to/the/script/run.sh
+@hourly cd /path/to/the/script && ./run.sh
