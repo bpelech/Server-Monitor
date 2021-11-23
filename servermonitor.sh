@@ -31,9 +31,9 @@ touch $seenlog
 seenboolean="$seenlogdir/seenboolean_$servername.txt"
 seen=$(head -1 "$seenlog")
 
-messaggio="Server $servername - $ip does not respond to ping since $seen." # Message in case the server is down
+messaggio="Server $servername $ip does not respond to ping since $seen." # Message in case the server is down
 oggetto="Server: $servername is down!" # Subject in case the server is down
-messaggio2="Server $servername - $ip now responds to ping. Was not responding since $seen." # Message in case the server is up
+messaggio2="Server $servername $ip now responds to ping. Was not responding since $seen." # Message in case the server is up
 oggetto2="Server: $servername is up" # Subject in case the server is up
 inviamail="sendemail -f $mittente -t $dest -u $oggetto -s $smtp -o tls=yes -xu $username -xp $pass -m $messaggio"
 inviamail2="sendemail -f $mittente -t $dest -u $oggetto2 -s $smtp -o tls=yes -xu $username -xp $pass -m $messaggio2"
